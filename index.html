@@ -10,6 +10,7 @@
 Added Event Driven programming 4.1-->
 
 <head>
+    <script src="indexcode.js"></script>
     <link rel="stylesheet" href="main style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,15 +38,17 @@ Added Event Driven programming 4.1-->
         Beginning of a paragraph. Used to put any text regarding its subject it would be attached to.
 
     </p>
-
-    <p>
-    <div id="memeImage">
-        <img src="Meme for 1.1.jpg">
-    </div>
-    </p>
+    <br>
+    <!--Marquee allows movement to the right-->
+    <marquee id="myMarquee" direction="right">
+        <img id="memeImage" src="Meme for 1.1.jpg">
+    </marquee>
     <br>
     <br>
-    <button>Start</button><button>Stop</button>
+    <br>
+    <!-- Buttons to move image and to stop it-->
+    <button onclick="startMove();" id="startButton">Start</button><button onclick="stopMove();"
+        id="stopButton">Stop</button>
     <br>
     <br>
     <footer>
